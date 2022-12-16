@@ -1,0 +1,79 @@
+{
+  "admin": [
+    {
+      "name": "admin",
+      "password": "admin"
+    }
+  ],
+  "categorybyadmin": [
+    {
+      "id": 1,
+      "name": "News"
+    },
+    {
+      "name": "Technology",
+      "id": 2
+    },
+    {
+      "name": "Sports",
+      "id": 3
+    }
+  ],
+  "author": [
+    {
+      "name": "ali",
+      "email": "ali@",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "ali",
+      "email": "ali@",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "ahmad",
+      "email": "ahmad@",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "samman",
+      "email": "samman@",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "test",
+      "email": "test@",
+      "password": "123",
+      "bluetick": "fa-solid fa-check",
+      "id": 5
+    }
+  ],
+  "viewer": [
+    {
+      "name": "ali",
+      "email": "ali@",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "ali",
+      "email": "ali@",
+      "password": "123",
+      "id": 2
+    }
+  ],
+  "blogs": [
+
+    {
+      "title": "pakistan",
+      "src": "https://media.istockphoto.com/id/1366253865/photo/main-view-of-the-lahore-forts-iconic-alamigiri-gate.jpg?s=1024x1024&w=is&k=20&c=hS57_ksCYKZ8ASHitIns6mbQvbvZmYPKZvdZNNMxagY=",
+      "Description": "shahi kila is pakistani historical place",
+      "category": "News",
+      "id": 1
+    }
+  ]
+}
