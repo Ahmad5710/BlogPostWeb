@@ -19,13 +19,13 @@ function Authors(){
     return(
         <>
         <Header/>
-        <Table striped bordered hover>
+        <Table striped bordered hover className='container'>
       <thead>
         <tr>
           <th>Id</th>
           <th>Name</th>
           <th>Email</th>
-          <th>View</th>
+      
           <th>Delete</th>
         </tr>
       </thead>
@@ -35,8 +35,8 @@ function Authors(){
                 <td>{item.id}</td>
                 <td>{item.name}</td>
                 <td>{item.email}</td>
-                <td><Button>View</Button></td>
-                <td><Button>Delete</Button></td>
+
+                <td><Button>Disable</Button></td>
               </tr>
         )
         

@@ -9,26 +9,29 @@ import { Link, useNavigate } from "react-router-dom";
 import Header from './header';
 
 
+
+
 function AdminDashBoard(){
 
     return(
+        
         <>
         <h1>Admin DashBoard</h1>
-        <div className="container">
-          <Header/>
- 
-        </div>
-        {/* <Viewers/>
-        <Authors/> */}
-    
-        
+<div className="container">
+  <Header/>
+</div>
 
-   
-        </>
+
+</>
+        
+       
     );
 }
 
 export default AdminDashBoard
+
+
+
 
 
 

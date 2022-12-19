@@ -13,7 +13,7 @@ function Header(){
     const navigate = useNavigate();
 
     function create(){
-        navigate("/CreateCategory");  
+        navigate("/categories");  
     }
     function author(){
       navigate("/Authors");  
@@ -38,11 +38,9 @@ return(
           <Nav className="me-auto">
             <Nav.Link href="" onClick={author}>Authors</Nav.Link>
             <Nav.Link href="" onClick={viewer}>viewers</Nav.Link>
-            <Nav.Link href="" onClick={blog}>blogs</Nav.Link>
-            <Nav.Link href="" onClick={create}>CreateCategory</Nav.Link>
+            <Nav.Link href="" onClick={create}>Categories</Nav.Link>
             <Nav.Link href="" onClick={logout}>logout</Nav.Link>
-            <Nav.Link href="" >categories</Nav.Link>
-
+           
           </Nav>
         </Navbar.Collapse>
       </Container>

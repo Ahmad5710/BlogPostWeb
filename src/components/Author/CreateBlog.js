@@ -7,16 +7,20 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
  function CreateBlog(){
 
-   const editor = useRef(null);
+
    const [catData ,setcatData] = useState([])
    const [title,setTitle] =useState("")
    const [src,setSrc] =useState("")
 	const [content, setContent] = useState('');
    const [category,setCategory]= useState("")
-   
-   // console.log(catData,title,content,category)
-  // console.log(category)
-  const [option,setOption] = useState()
+   const userlist =localStorage.getItem("user")
+   const obj = JSON.parse(userlist)
+   var Authorname = obj.name;
+   console.log(Authorname)
+
+
+
+
 
    function categoryData(){
       fetch('http://localhost:5000/categorybyadmin')
@@ -36,9 +40,10 @@ function blogSubmit(e){
       else{
       const blogs={
           title:title,
-          src:src,
+          img:src,
           Description:content,
-          category: category
+          category: category,
+          Authorname:Authorname
       };
       fetch("http://localhost:5000/blogs", {
           method: "POST",
@@ -69,7 +74,7 @@ function blogSubmit(e){
         <Form.Control type="text" placeholder="Enter Blog Title" onChange={(e)=>setTitle(e.target.value)} />
       </Form.Group>
       <Form.Group className="mb-3">
-        <Form.Label>Blog Title</Form.Label>
+        <Form.Label>image</Form.Label>
         <Form.Control type="text" placeholder="Enter image source(link) here" onChange={(e)=>setSrc(e.target.value)} />
       </Form.Group>
       <br></br>

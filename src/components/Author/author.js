@@ -11,20 +11,19 @@ function Author(){
     const[data,setData] = useState([]);
     const navigate = useNavigate();
     const userlist =localStorage.getItem("user")
-    console.log(userlist)
    const obj = JSON.parse(userlist)
-   console.log(obj)
    var currentid = obj.id;
+  //  console.log(currentid)
 
 
-   console.log(currentid)
+
 
 
     useEffect(()=>{
         fetch(`http://localhost:5000/author/${currentid }`)
   .then(response => response.json())
   .then(json => setData(json))
-    },[])
+    },[currentid])
 
     
     // function deleteUser(id){

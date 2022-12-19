@@ -15,6 +15,9 @@ import Viewer from './components/viewer/viewer';
 import CreateBlog from './components/Author/CreateBlog';
 import Test from './components/test/test';
 import EditProfile from './components/Author/editProfile';
+import Posts from './posts/AuthorPost';
+import Categories from './components/admin/categories';
+import CategoryDetail from './components/admin/categoryDetail';
 
 
 function App() {
@@ -36,10 +39,19 @@ function App() {
         <Route path='/Viewer' element={  <Viewer/>}/>
         <Route path='/CreateBlog' element={  <CreateBlog/>}/>
         <Route path='/EditProfile' element={<EditProfile/>}/>
-        {/* <Route path='/test' element={  <Test/>}/> */}
+        <Route path='/Posts' element={<Posts/>}/>
+        <Route path='/Categories' element={  <Categories/>}/>
+        <Route path='/CategoryDetail/:name' element={  <CategoryDetail/>}/>
+
+       
 
       </Routes>
       </BrowserRouter>
+
+     
+
+    
+      
       
       
       

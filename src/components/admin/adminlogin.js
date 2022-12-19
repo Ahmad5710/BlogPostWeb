@@ -7,15 +7,14 @@ const [name ,setname] = useState("")
 const [password,setPassword] = useState("")
 const [data,setdata] =useState([])
 const navigate = useNavigate();
-useEffect(()=>{
-    fetch("http://localhost:5000/admin")
-    .then((response) => response.json())
-    .then((json) => setdata(json))
-},[])
+
 
 
 function login(e){
     e.preventDefault();
+    fetch("http://localhost:5000/admin")
+    .then((response) => response.json())
+    .then((json) => setdata(json))
     // alert("new click")
     let filteredData= data.find((user) => {
         return (user.name===name && user.password===password)
@@ -44,7 +43,7 @@ localStorage.setItem("user", JSON.stringify(filteredData))
             <Card className="shadow">
               <Card.Body>
                 <div className="mb-3 mt-md-4">
-                  <h2 className="fw-bold mb-2 text-uppercase ">Newbook</h2>
+                  <h2 className="fw-bold mb-2 text-uppercase ">BlogPost</h2>
                   <p className=" mb-5">Please enter your email and password!</p>
                   <div className="mb-3">
                     <Form>
