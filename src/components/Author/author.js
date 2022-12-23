@@ -2,9 +2,13 @@
 import { useEffect, useState } from "react";
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
-import { Link } from "react-router-dom";
-// import Header from "./header";
-import {  useNavigate } from "react-router-dom";
+// import {  useNavigate } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+
+import { Link, useNavigate } from "react-router-dom";
 
 function Author(){
 
@@ -62,15 +66,36 @@ function Author(){
         localStorage.removeItem("user")
         navigate("/AuthorLogin")
       }
+      function blog(){
+        
+        navigate("/AuthorBlog")
+      }
+      function home(){
+        
+        navigate("/Home2")
+      }
     return(
 
          <>
-         <h1>{data.name}</h1>
-         <Button>Profile</Button>
-         <Button onClick={logout}>Logout</Button>
-         <Button onClick={editprofile}>Edit Profile</Button>
-         <Button>Blogs</Button>
-         <Button onClick={CreateBlog}>CreateBlog</Button>
+           
+           <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="">{data.name}</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+          <Nav.Link href="" onClick={home} >Home</Nav.Link>
+            <Nav.Link href="" onClick={editprofile} >Edit Profile</Nav.Link>
+            <Nav.Link href=""  onClick={blog}>Blogs</Nav.Link>
+            <Nav.Link href="" onClick={CreateBlog}>CreateBlog</Nav.Link>
+            <Nav.Link href="" onClick={logout}>Logout</Nav.Link>
+           
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+      
+
 
          {/* <Header/> */}
           <Table striped bordered hover>

@@ -10,8 +10,8 @@ import BlogPost from "./BlogPost";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useEffect, useState } from "react";
-import Header1 from './header1';
-function Home(){
+import Header2 from './header2';
+function Home2(){
 
   const [blogData, setBlogData]=useState([])
 
@@ -30,7 +30,7 @@ function Home(){
         <>
        
 
-<Header1/>
+<Header2/>
 
 <Container >
   
@@ -53,4 +53,4 @@ function Home(){
         </>
     )
 }
-export default Home
+export default Home2

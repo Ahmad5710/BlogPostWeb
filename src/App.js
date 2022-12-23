@@ -13,11 +13,14 @@ import ViewerSignup from './components/viewer/viewersignup';
 import Author from './components/Author/author';
 import Viewer from './components/viewer/viewer';
 import CreateBlog from './components/Author/CreateBlog';
-import Test from './components/test/test';
+// import Test from './components/test/test';
 import EditProfile from './components/Author/editProfile';
-import Posts from './posts/AuthorPost';
+// import Posts from './posts/AuthorPost';
 import Categories from './components/admin/categories';
 import CategoryDetail from './components/admin/categoryDetail';
+import AuthorBlog from './components/Author/AuthorBlog';
+import EditPost from './components/Author/EditPost';
+import Home2 from './components/home2';
 
 
 function App() {
@@ -25,7 +28,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path='/Home' element={ <Home/>}/>
+        <Route path='/' element={ <Home/>}/>
         <Route path='/AdminLogin' element={ <AdminLogin/>}/>
         <Route path='/AdminDashboard' element={ <AdminDashBoard/>}/>
         <Route path='/Authors' element={ <Authors/>}/>
@@ -39,27 +42,19 @@ function App() {
         <Route path='/Viewer' element={  <Viewer/>}/>
         <Route path='/CreateBlog' element={  <CreateBlog/>}/>
         <Route path='/EditProfile' element={<EditProfile/>}/>
-        <Route path='/Posts' element={<Posts/>}/>
+        {/* <Route path='/Posts' element={<Posts/>}/> */}
         <Route path='/Categories' element={  <Categories/>}/>
         <Route path='/CategoryDetail/:name' element={  <CategoryDetail/>}/>
+        <Route path='/AuthorBlog' element={  <AuthorBlog/>}/>
+        <Route path='/EditPost/:id' element={   <EditPost/>}/>
+        <Route path='/Home2' element={    <Home2/>}/>
 
        
 
       </Routes>
       </BrowserRouter>
-
      
 
-    
-      
-      
-      
-      
-
-
-
-
- 
 
      
 

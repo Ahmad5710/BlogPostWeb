@@ -17,6 +17,10 @@
     {
       "name": "Sports",
       "id": 3
+    },
+    {
+      "name": "politics",
+      "id": 4
     }
   ],
   "author": [
@@ -26,24 +30,14 @@
       "password": "123",
       "id": 1
     },
-    {
-      "name": "ali",
-      "email": "ali@",
-      "password": "123",
-      "id": 2
-    },
+
     {
       "name": "ahmad",
       "email": "ahmad@",
       "password": "123",
       "id": 3
     },
-    {
-      "name": "samman",
-      "email": "samman@",
-      "password": "123",
-      "id": 4
-    },
+ 
     {
       "name": "test",
       "email": "test@",
@@ -67,12 +61,12 @@
     }
   ],
   "blogs": [
-
     {
-      "title": "pakistan",
-      "src": "https://media.istockphoto.com/id/1366253865/photo/main-view-of-the-lahore-forts-iconic-alamigiri-gate.jpg?s=1024x1024&w=is&k=20&c=hS57_ksCYKZ8ASHitIns6mbQvbvZmYPKZvdZNNMxagY=",
-      "Description": "shahi kila is pakistani historical place",
-      "category": "News",
+      "title": "Pakistan",
+      "img": "https://cdn.britannica.com/46/3346-050-F71DF512/flag-symbolism-Pakistan-design-Islamic.jpg",
+      "Description": "\"What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.    Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versi",
+      "category": "politics",
+      "Authorname": "ali",
       "id": 1
     }
   ]

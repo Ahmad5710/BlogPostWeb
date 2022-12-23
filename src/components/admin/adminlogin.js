@@ -9,12 +9,11 @@ const [data,setdata] =useState([])
 const navigate = useNavigate();
 
 
-
 function login(e){
+  fetch("http://localhost:5000/admin")
+  .then((response) => response.json())
+  .then((json) => setdata(json))
     e.preventDefault();
-    fetch("http://localhost:5000/admin")
-    .then((response) => response.json())
-    .then((json) => setdata(json))
     // alert("new click")
     let filteredData= data.find((user) => {
         return (user.name===name && user.password===password)

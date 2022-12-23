@@ -29,7 +29,7 @@ function CategoryDetail() {
 
   return (
     <>
-      <h1>HY AHMAD</h1>
+   
       <Table striped bordered hover>
         <thead>
           <tr>
